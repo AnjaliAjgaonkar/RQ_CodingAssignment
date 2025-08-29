@@ -1,0 +1,6 @@
+﻿  servermain.cpp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 341 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  RQ_TestDaemon.vcxproj -> D:\Anjali\visual studio\RQ_TestDaemon\x64\Release\RQ_TestDaemon.exe

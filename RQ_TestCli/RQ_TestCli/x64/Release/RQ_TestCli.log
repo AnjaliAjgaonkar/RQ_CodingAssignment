@@ -1,0 +1,6 @@
+﻿  clientmain.cpp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 119 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  RQ_TestCli.vcxproj -> D:\Anjali\visual studio\RQ_TestCli\x64\Release\RQ_TestCli.exe
