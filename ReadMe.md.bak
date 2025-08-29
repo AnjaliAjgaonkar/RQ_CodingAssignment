@@ -40,6 +40,8 @@ To compile using any other compiler, use following files:
 Add servermain.cpp to Server project and compile (eg: RQ_TestDaemon.exe)
 Add clientmain.cpp to Client project and compile (eg: RQ_TestCli.exe)
 
+-------------------------------------------------------
+
 
 
 
