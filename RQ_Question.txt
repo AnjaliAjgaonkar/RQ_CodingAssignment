@@ -1,0 +1,63 @@
+Objective:
+Create a daemon and a CLI in C++ that interact using any Inter-Process Communication (IPC) mechanism of your choice. The assignment focuses on building a robust, interactive system with proper error handling and concurrency.
+ 
+ 
+Requirements:
+ 
+1. CLI Functionality:
+   When the CLI is invoked, it should present the following choices to the user:
+   1. Insert a number:  
+      - Accept a positive integer from the user and send it to the daemon.
+      - The daemon stores the number along with its insertion timestamp (in Unix time) and prints the same on the CLI console.
+      - Duplicate numbers are not allowed.
+   2. Delete a number:  
+      - Accept a positive integer from the user and send it to the daemon.
+      - The daemon removes the number from its data structure and prints the same on the CLI console.
+   3. Print all numbers:  
+      - Request the daemon to return all stored numbers.
+      - The daemon responds with the numbers in sorted order (lowest to highest)along with their timestamps, which are printed on the CLI console.
+   4. Delete all numbers:  
+      - Send a command to the daemon to clear all stored numbers.
+   5. Find a number
+         - Given a number, the daemon responds if the number is present in its store or not.
+   6. Exit:  
+      - Exit the CLI.
+ 
+2. Daemon Responsibilities:
+   - Maintain an “in-memory data structure” of your choice to store the numbers and their insertion timestamps.
+   - Ensure concurrency support to handle multiple simultaneous CLI invocations through the chosen IPC mechanism.
+   - Provide proper responses to the CLI based on the user's choices.
+ 
+3. Data Structure:
+   - The data structure should allow:
+     - Efficient insertion and deletion.
+     - Prevention of duplicate entries.
+     - Sorted retrieval of numbers.
+     - Efficiently checking for presence/absence of numbers.
+   - Include reasoning for your choice of the data structure in the submission.
+ 
+4. Error Handling:
+   - Only positive integers should be accepted.
+   - Handle invalid user inputs (e.g., negative numbers, non-numeric input).
+   - Provide appropriate error messages for all edge cases.
+ 
+5. Concurrency:
+   - Support simultaneous invocation of multiple CLI instances interacting with the daemon.
+ 
+6. Environment:
+   - Choose any operating system of your choice (Linux, Windows, etc.).
+   - Specify any dependencies and provide clear build instructions.
+ 
+ 
+Submission Requirements:
+1. Source Code:
+   - Include the complete source code for the daemon and CLI.
+ 
+2. Makefile:
+   - Provide a `Makefile` or equivalent build script to compile the code.
+ 
+3. Build Instructions:
+   - Clearly specify the compiler, dependencies, and steps required to build and run the solution.
+ 
+4. Data Structure Reasoning:
+   - Explain your choice of the data structure and why it is suited for this use case.

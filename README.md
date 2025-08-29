@@ -1,2 +1,45 @@
-# RQ_CodingAssignment
-Coding assignment for ReliaQuest
+Files:
+
+RQ_TestDaemon : VS project folder for Daemon process (Server)
+RQ_TestCli : VS project folder for CLI process (Client)
+
+Server process path: RQ_TestDaemon\x64\Release\RQ_TestDaemon.exe
+Client process path: RQ_TestCli\x64\Release\RQ_TestCli.exe
+
+Entire server code is in servermain.cpp.
+Entire client code is in clientmain.cpp.
+-------------------------------------------------------
+
+DataStructure used:
+Numbers will be stored in a map in the form of <input number, insertion timestamp>
+Map used since we want to store unique numbers and in sorted order
+
+For every CLI process, we will be maintaining a separate map.
+
+All CLI processes and their respective maps will be stored in an unordered map where the key will be unique process ID of the client.
+-------------------------------------------------------
+
+Synchronization:
+Mutex object used for accessing the shared unordered map.
+-------------------------------------------------------
+
+Operating system: Windows
+Code build using Visual Studio 2022
+-------------------------------------------------------
+Execution steps:
+1. First run server (RQ_TestDaemon.exe)
+Server will be started and waiting continuously for client connections
+2. Run one or multiple clients (RQ_TestCli.exe)
+
+
+To compile using any other compiler, you can check the following steps: 
+Add servermain.cpp to Server project and compile (eg: RQ_TestDaemon.exe)
+Add clientmain.cpp to Client project and compile (eg: RQ_TestCli.exe)
+
+
+-------------------------------------------------------
+
+
+
+
+

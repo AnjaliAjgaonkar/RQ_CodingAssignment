@@ -1,0 +1,9 @@
+# Ignore all object files
+*.o
+
+# Ignore all files with .tmp extension
+*.tmp
+
+# Ignore large vs folders
+.vs/
+
